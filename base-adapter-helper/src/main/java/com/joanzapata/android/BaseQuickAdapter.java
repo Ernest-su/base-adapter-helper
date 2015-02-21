@@ -131,6 +131,12 @@ public abstract class BaseQuickAdapter<T, H extends BaseAdapterHelper> extends B
         data.addAll(elem);
         notifyDataSetChanged();
     }
+	
+	//allow add elements to specific position
+    public void addAll(int pos,List<T> elem) {
+        data.addAll(pos,elem);
+        notifyDataSetChanged();
+    }
 
     public void set(T oldElem, T newElem) {
         set(data.indexOf(oldElem), newElem);
