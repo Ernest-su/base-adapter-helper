@@ -137,7 +137,7 @@ public abstract class BaseQuickAdapter<T, H extends BaseAdapterHelper> extends B
         data.addAll(pos,elem);
         notifyDataSetChanged();
     }
-
+ 
     public void set(T oldElem, T newElem) {
         set(data.indexOf(oldElem), newElem);
     }
